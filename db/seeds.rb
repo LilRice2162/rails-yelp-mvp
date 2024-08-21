@@ -4,7 +4,7 @@
 #
 # Example:
 #
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
+#   ['Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 require 'faker'
@@ -15,7 +15,7 @@ Restaurant.destroy_all
     name: Faker::Restaurant.name,
     address: Faker::Address.full_address,
     phone_number: Faker::PhoneNumber.phone_number,
-    category: ["chinese", "italian", "japanese", "french", "belgian"].sample
+    category: ['chinese', 'italian', 'japanese', 'french', 'belgian'].sample
   )
   10.times do
     Review.create(
